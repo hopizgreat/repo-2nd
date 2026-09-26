@@ -19,12 +19,18 @@
    <!-- Bootstrap JavaScript -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+   <!-- jQuery used to load the navbar -->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
  
 
 </head>
 <body>
 
-<div class="card float-end" style="width:300px">
+<!-- Navbar gets added here -->
+<div id="nav-placeholder"></div>
+
+<div class="card mx-auto mb-4" style="width:300px">
 
     <img class="rounded mx-auto d-block"
          src="images/my-photo.jpg"
@@ -71,12 +77,42 @@
 
 <div id="hobbies" class="collapse w-50 mx-auto">
     <p>
-        ADD YOUR HOBBIES AND INTERESTS HERE.
+        It’s best to say that I am fun and my hobbies are fun also. I spent my majority of my free time watching movies. As a kid I was watching movies and did nothing else, so this hobby has been with me for a long time. Also, I have an interest in technology. Especially smart phones and computers. They just give me that feeling where I feel connected with them, it sounds weird but trust me I am not alone.
     </p>
 </div>
 </div>
 </div>
 
+
+
+<div class="card float-end mt-4 me-3 mb-3" style="width:300px">
+
+    <div class="card-body">
+
+        <h4 class="card-title">Contact Me</h4>
+
+        <p class="card-text">
+            Phone: 720-591-0546
+        </p>
+
+        <p class="card-text">
+            Email: tabera@msudenver.edu
+        </p>
+
+        <p class="card-text">
+            Location: Denver, Colorado
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<script>
+    // Load only the #site-nav element from navbar.html
+    $("#nav-placeholder").load("navbar.html #site-nav");
+</script>
 
 </body>
 </html>
