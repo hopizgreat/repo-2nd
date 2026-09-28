@@ -35,10 +35,40 @@
 
 <div class="card mx-auto mb-4" style="width:300px">
 
+
+
+    
+
+    <!-- Click profile photo to show more photos -->
+<a href="#morePhotos"
+   data-bs-toggle="collapse"
+   aria-expanded="false"
+   aria-controls="morePhotos">
+
     <img class="rounded mx-auto d-block"
          src="images/my-photo.jpg"
-         alt="This is a picture of me, and my name is Thomas Abera"
+         alt="Thomas Abera"
          style="width:85%">
+
+</a>
+
+
+<!-- Additional personal photos -->
+<div id="morePhotos" class="collapse text-center mt-3">
+
+    <img src="images/beach-photo.jpg"
+         class="img-fluid rounded"
+         alt="Thomas Abera at the beach"
+         style="width:85%">
+
+    <img src="images/second-photo.jpg"
+         class="img-fluid rounded mt-3"
+         alt="Thomas Abera at another location"
+         style="width:85%">
+
+</div>
+
+
 
     <div class="card-body">
         <h4 class="card-title">This is me, Thomas Abera</h4>
